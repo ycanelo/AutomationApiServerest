@@ -6,7 +6,7 @@ import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import org.junit.jupiter.api.Test;
 
-public class TestRunner {
+public class RunnerTest {
 
     @Test
     void runAllFeaturesIndividually() {
@@ -34,27 +34,27 @@ public class TestRunner {
 
     @Karate.Test
     Karate test_get_users() {
-        return Karate.run("classpath:features/get-users.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/get-users.feature");
     }
 
     @Karate.Test
     Karate test_get_user_by_id() {
-        return Karate.run("classpath:features/get-user-by-id.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/get-user-by-id.feature");
     }
 
     @Karate.Test
     Karate test_post_create_user() {
-        return Karate.run("classpath:features/create-user.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/create-user.feature");
     }
 
     @Karate.Test
     Karate test_delete_user() {
-        return Karate.run("classpath:features/delete-user.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/delete-user.feature");
     }
 
     @Karate.Test
     Karate test_put_user() {
-        return Karate.run("classpath:features/put-user.feature").relativeTo(getClass());
+        return Karate.run("classpath:features/put-user.feature");
     }
 
 }

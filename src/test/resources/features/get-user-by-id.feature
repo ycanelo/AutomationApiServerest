@@ -23,7 +23,7 @@ Feature: Validar endpoint get usuarios por id
     And print 'Se encontró usuario con ID: ' + userId
     Examples:
       | id               | name     | email           | password | administrador |
-      | amumaqSjyKqlcUJh | Test0008 | Test0008@qa.com | Test0008 | false         |
+      | qJV0WXZX64jDjWix | Test0008 | Test0008@qa.com | Test0008 | false         |
 
 
   @getUserById02 @UnhappyPathGetById
