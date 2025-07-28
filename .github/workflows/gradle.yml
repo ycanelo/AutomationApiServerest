@@ -27,4 +27,4 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Run Karate tests
-      run: mvn test -Dkarate.options="--tags @getUsersAll"
+      run: mvn clean test
