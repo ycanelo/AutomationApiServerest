@@ -27,6 +27,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Install Karate dependencies
-      run: mvn clean install -DskipTests=true
+      run: mvn clean install
     - name: Run Karate tests
       run: mvn test -Dkarate.options="--tags @getUsersAll"
