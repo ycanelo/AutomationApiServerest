@@ -30,10 +30,3 @@ jobs:
         
     - name: Run maven tests
       run: mvn clean test
-
-    - name: Upload Karate reports
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: karate-reports
-        path: target/karate-reports/
